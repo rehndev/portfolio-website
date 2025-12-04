@@ -1,13 +1,13 @@
 :root {
-  --color-bg: #050505;
-  --color-bg-elevated: #0b0b0f;
-  --color-surface: #111111;
-  --color-border-subtle: rgba(148, 163, 184, 0.3);
-  --color-accent: #efd395; /* gold */
-  --color-accent-soft: rgba(239, 211, 149, 0.12);
-  --color-text: #f9fafb;
-  --color-text-muted: #9ca3af;
-  --color-heading: #ffffff;
+  --color-bg: #0A0A0A; /* Jet black */
+  --color-bg-elevated: #0A0A0A; /* Jet black */
+  --color-surface: #3C4142; /* Charcoal grey */
+  --color-border-subtle: rgba(207, 207, 207, 0.3); /* Platinum silver */
+  --color-accent: #E2C479; /* Royal gold */
+  --color-accent-soft: rgba(219, 196, 160, 0.14); /* Champagne beige */
+  --color-text: #FAFAFA; /* Luxury white */
+  --color-text-muted: #CFCFCF; /* Platinum silver */
+  --color-heading: #FAFAFA; /* Luxury white */
   --shadow-soft: 0 22px 45px rgba(0, 0, 0, 0.85);
   --radius-lg: 18px;
   --radius-xl: 24px;
@@ -93,7 +93,7 @@ p {
   width: 2.1rem;
   height: 2.1rem;
   border-radius: 0.9rem;
-  background: radial-gradient(circle at top left, #efd395, #efd395, #efd395);
+  background: radial-gradient(circle at top left, #E2C479, #E2C479, #E2C479);
   color: #050505;
   font-weight: 700;
   font-size: 0.95rem;
@@ -118,7 +118,7 @@ p {
   margin: 0;
   border-radius: 999px;
   background-color: rgba(15, 15, 15, 0.9);
-  border: 1px solid rgba(148, 163, 184, 0.32);
+  border: 1px solid rgba(207, 207, 207, 0.32);
 }
 
 .nav-link {
@@ -139,7 +139,7 @@ p {
   position: absolute;
   inset: 0.12rem;
   border-radius: inherit;
-  background: radial-gradient(circle at top, rgba(239, 211, 149, 0.16), transparent);
+  background: radial-gradient(circle at top, rgba(226, 196, 121, 0.16), transparent);
   opacity: 0;
   transition: opacity var(--transition-fast);
 }
@@ -167,7 +167,7 @@ p {
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 999px;
-  border: 1px solid rgba(148, 163, 184, 0.35);
+  border: 1px solid rgba(207, 207, 207, 0.35);
   background-color: rgba(15, 15, 15, 0.9);
   cursor: pointer;
   padding: 0;
@@ -197,7 +197,7 @@ p {
     gap: 0.35rem;
     border-radius: 1rem;
     background: rgba(10, 10, 10, 0.97);
-    border: 1px solid rgba(148, 163, 184, 0.4);
+    border: 1px solid rgba(207, 207, 207, 0.4);
     box-shadow: var(--shadow-soft);
     max-height: 0;
     overflow: hidden;
@@ -331,9 +331,9 @@ p {
 .hero-accent-card {
   border-radius: var(--radius-xl);
   padding: 1.4rem 1.5rem;
-  background: radial-gradient(circle at top left, rgba(239, 211, 149, 0.35), transparent),
+  background: radial-gradient(circle at top left, rgba(226, 196, 121, 0.35), transparent),
     linear-gradient(to bottom right, #050505, #111111);
-  border: 1px solid rgba(156, 163, 175, 0.55);
+  border: 1px solid rgba(207, 207, 207, 0.55);
   box-shadow: var(--shadow-soft);
   display: flex;
   flex-wrap: wrap;
@@ -346,7 +346,7 @@ p {
   padding: 0.35rem 0.75rem;
   border-radius: 999px;
   background-color: rgba(15, 15, 15, 0.92);
-  border: 1px solid rgba(148, 163, 184, 0.6);
+  border: 1px solid rgba(207, 207, 207, 0.6);
   font-size: 0.78rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -408,20 +408,20 @@ p {
 }
 
 .primary-btn {
-  background: linear-gradient(135deg, #efd395, #efd395);
+  background: linear-gradient(135deg, #E2C479, #E2C479);
   color: #111111;
-  box-shadow: 0 18px 35px rgba(239, 211, 149, 0.45);
+  box-shadow: 0 18px 35px rgba(226, 196, 121, 0.45);
 }
 
 .primary-btn:hover {
   transform: translateY(-1px);
-  box-shadow: 0 24px 45px rgba(239, 211, 149, 0.55);
+  box-shadow: 0 24px 45px rgba(226, 196, 121, 0.55);
 }
 
 .ghost-btn {
   background-color: rgba(15, 15, 15, 0.7);
   color: var(--color-heading);
-  border-color: rgba(148, 163, 184, 0.6);
+  border-color: rgba(207, 207, 207, 0.6);
 }
 
 .ghost-btn:hover {
@@ -446,7 +446,7 @@ p {
   border-radius: var(--radius-lg);
   padding: 0.8rem 1rem;
   background-color: rgba(10, 10, 10, 0.9);
-  border: 1px solid rgba(148, 163, 184, 0.45);
+  border: 1px solid rgba(207, 207, 207, 0.45);
 }
 
 .highlight-label {
@@ -478,9 +478,9 @@ p {
 .skill-card {
   border-radius: var(--radius-lg);
   padding: 1.1rem 1.1rem;
-  background: radial-gradient(circle at top left, rgba(239, 211, 149, 0.16), transparent),
+  background: radial-gradient(circle at top left, rgba(226, 196, 121, 0.16), transparent),
     linear-gradient(to bottom right, #050505, #111111);
-  border: 1px solid rgba(148, 163, 184, 0.45);
+  border: 1px solid rgba(207, 207, 207, 0.45);
   box-shadow: 0 16px 30px rgba(0, 0, 0, 0.7);
   transition: transform var(--transition-med), box-shadow var(--transition-med), border-color var(--transition-med);
 }
@@ -516,7 +516,7 @@ p {
   border-radius: 999px;
   background-color: rgba(15, 15, 15, 0.95);
   color: var(--color-text);
-  border: 1px solid rgba(148, 163, 184, 0.6);
+  border: 1px solid rgba(207, 207, 207, 0.6);
 }
 
 @media (min-width: 768px) {
@@ -534,7 +534,7 @@ p {
   border-radius: var(--radius-xl);
   padding: 1.2rem 1.25rem 1.3rem;
   background-color: var(--color-surface);
-  border: 1px solid var(--color-border-subtle);
+  border: 1px solid rgba(207, 207, 207, 0.3);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.85);
   display: flex;
   flex-direction: column;
@@ -546,8 +546,8 @@ p {
 .project-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 26px 50px rgba(0, 0, 0, 0.9);
-  border-color: rgba(239, 211, 149, 0.85);
-  background: radial-gradient(circle at top left, rgba(239, 211, 149, 0.18), transparent),
+  border-color: rgba(226, 196, 121, 0.85);
+  background: radial-gradient(circle at top left, rgba(226, 196, 121, 0.18), transparent),
     linear-gradient(to bottom right, #050505, #111111);
 }
 
@@ -606,7 +606,7 @@ p {
   padding: 0.35rem 0.6rem;
   border-radius: 999px;
   background-color: rgba(15, 15, 15, 0.9);
-  border: 1px solid rgba(239, 211, 149, 0.55);
+  border: 1px solid rgba(226, 196, 121, 0.55);
 }
 
 .project-link::after {
@@ -668,7 +668,7 @@ p {
 .contact-note {
   border-radius: var(--radius-lg);
   padding: 1rem 1.05rem;
-  border: 1px dashed rgba(148, 163, 184, 0.6);
+  border: 1px dashed rgba(207, 207, 207, 0.6);
   background-color: rgba(10, 10, 10, 0.9);
 }
 
