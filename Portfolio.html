@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Isak Rehn | Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Personal portfolio of John Doe, a Java Developer showcasing projects, skills, and contact information." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo" aria-label="Go to top">
+        <span class="logo-mark">IR</span>
+        <span class="logo-text">Isak&nbsp;Rehn</span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul id="primary-navigation" class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="section hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-eyebrow">Hello, I am</p>
+          <h1 class="hero-title">Isak Rehn</h1>
+          <p class="hero-subtitle">Software Developer</p>
+          <p class="hero-description">
+            I build reliable, scalable backend solutions and modern web applications using Java and related technologies.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary-btn">View Projects</a>
+            <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="btn ghost-btn">
+              GitHub Profile
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-accent-card" aria-hidden="true">
+          <div class="hero-badge">Java • JavaFX • UI Design</div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">5+</span>
+            <span class="hero-stat-label">Projects</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">3+</span>
+            <span class="hero-stat-label">Years coding</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container section-inner">
+        <header class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">
+            A brief introduction to who I am and how I work.
+          </p>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I am a student at Lund University pursuing a Bachelor Programme in Design of Information Systems, aiming to graduate with a Bachelor of Science in Information Systems. 
+              I am passionate about building well-structured software solutions and creating applications with a strong focus on functionality and user experience.
+            </p>
+            <p>
+                My current skills include Java and JavaFX, which I use to develop desktop applications with clean architecture, structured logic, and intuitive interfaces. 
+                I have experience working with object-oriented programming, application design, and creating interactive user interfaces.
+            </p>
+          </div>
+          <div class="about-highlights">
+            <div class="about-highlight">
+              <span class="highlight-label">Primary stack</span>
+              <span class="highlight-value">Java • Object-Oriented Design • Backend Fundamentals</span>
+            </div>
+            <div class="about-highlight">
+              <span class="highlight-label">Focus areas</span>
+              <span class="highlight-value">Backend Development, APIs, microservices</span>
+            </div>
+            <div class="about-highlight">
+              <span class="highlight-label">Currently exploring</span>
+              <span class="highlight-value">REST API Development & Backend Architecture</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <div class="container section-inner">
+        <header class="section-header">
+          <h2 class="section-title">Skills</h2>
+          <p class="section-subtitle">
+            Core technologies and tools I work with.
+          </p>
+        </header>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3 class="skill-title">Core Java</h3>
+            <p class="skill-description">
+              Strong foundation in Java, object-oriented programming, and clean code principles.
+            </p>
+            <ul class="skill-tags">
+              <li>Java SE</li>
+              <li>OOP</li>
+              <li>Collections</li>
+              <li>Streams</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3 class="skill-title">Backend & Frameworks</h3>
+            <p class="skill-description">
+              Building RESTful services and backend logic with modern Java frameworks.
+            </p>
+            <ul class="skill-tags">
+              <li>Spring Boot</li>
+              <li>Spring MVC</li>
+              <li>REST APIs</li>
+              <li>JSON</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3 class="skill-title">Databases</h3>
+            <p class="skill-description">
+              Designing schemas, writing queries, and integrating persistence layers.
+            </p>
+            <ul class="skill-tags">
+              <li>SQL</li>
+              <li>PostgreSQL</li>
+              <li>MySQL</li>
+              <li>JPA / Hibernate</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3 class="skill-title">Tools & Other</h3>
+            <p class="skill-description">
+              Supporting tools and technologies I use in daily development.
+            </p>
+            <ul class="skill-tags">
+              <li>Git & GitHub</li>
+              <li>Maven / Gradle</li>
+              <li>JUnit</li>
+              <li>Docker (basics)</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="container section-inner">
+        <header class="section-header">
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">
+            Selected Java projects from my GitHub. Links are placeholders you can update.
+          </p>
+        </header>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">RESTful Task Manager API</h3>
+              <span class="project-chip">Java • Spring Boot</span>
+            </div>
+            <p class="project-description">
+              A task management REST API supporting CRUD operations, validation, and pagination. Designed with layered architecture
+              and comprehensive unit tests.
+            </p>
+            <ul class="project-tech-list">
+              <li>Spring Boot</li>
+              <li>Spring Data JPA</li>
+              <li>PostgreSQL</li>
+              <li>JUnit</li>
+            </ul>
+            <a
+              href="https://github.com/your-username/task-manager-api"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
+              View on GitHub
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">Library Management System</h3>
+              <span class="project-chip">Java • Desktop</span>
+            </div>
+            <p class="project-description">
+              A Java-based application for managing books, members, and loans with a simple UI layer and persistent storage.
+            </p>
+            <ul class="project-tech-list">
+              <li>Java</li>
+              <li>JDBC</li>
+              <li>MySQL</li>
+              <li>MVC pattern</li>
+            </ul>
+            <a
+              href="https://github.com/your-username/library-management-system"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
+              View on GitHub
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">URL Shortener Service</h3>
+              <span class="project-chip">Java • Spring</span>
+            </div>
+            <p class="project-description">
+              A lightweight URL shortener built with Java and Spring Boot, including redirect endpoints, basic analytics, and
+              database persistence.
+            </p>
+            <ul class="project-tech-list">
+              <li>Spring Boot</li>
+              <li>REST</li>
+              <li>Hibernate</li>
+              <li>H2 / PostgreSQL</li>
+            </ul>
+            <a
+              href="https://github.com/your-username/url-shortener"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
+              View on GitHub
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container section-inner">
+        <header class="section-header">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-subtitle">
+            Feel free to reach out if you’d like to collaborate or just say hello.
+          </p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-details">
+            <h3 class="contact-heading">Get in touch</h3>
+            <p>
+              Whether you have a project in mind, want to discuss Java development, or simply connect, I’d be happy to hear from you.
+            </p>
+
+            <ul class="contact-list">
+              <li>
+                <span class="contact-label">Email</span>
+                <a href="mailto:your.email@example.com" class="contact-link">rehn.isak@outlook.com</a>
+              </li>
+              <li>
+                <span class="contact-label">GitHub</span>
+                <a
+                  href="https://github.com/your-username"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-link"
+                >
+                  github.com/rehndev
+                </a>
+              </li>
+              <li>
+                <span class="contact-label">LinkedIn</span>
+                <a
+                  href="https://www.linkedin.com/in/your-username"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-link"
+                >
+                  linkedin.com/in/your-username
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-note">
+            <p class="contact-note-text">
+              <strong>Note:</strong> This portfolio is built with pure HTML, CSS, and JavaScript. You can clone it and customize
+              the content and GitHub links to match your own projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-text">© <span id="year"></span> Isak Rehn. All rights reserved.</p>
+      <a href="#home" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
