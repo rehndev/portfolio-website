@@ -1,13 +1,13 @@
 :root {
-  --color-bg: #0A0A0A; /* Jet black */
-  --color-bg-elevated: #0A0A0A; /* Jet black */
-  --color-surface: #3C4142; /* Charcoal grey */
-  --color-border-subtle: rgba(207, 207, 207, 0.3); /* Platinum silver */
-  --color-accent: #6988E7; /* Royal blue */
-  --color-accent-soft: rgba(105, 136, 231, 0.14); /* Soft royal blue */
-  --color-text: #FAFAFA; /* Luxury white */
-  --color-text-muted: #CFCFCF; /* Platinum silver */
-  --color-heading: #FAFAFA; /* Luxury white */
+  --color-bg: #0A0A0A;
+  --color-bg-elevated: #0A0A0A;
+  --color-surface: #3C4142;
+  --color-border-subtle: rgba(207, 207, 207, 0.3);
+  --color-accent: #6988E7;
+  --color-accent-soft: rgba(105, 136, 231, 0.14);
+  --color-text: #FAFAFA;
+  --color-text-muted: #CFCFCF;
+  --color-heading: #FAFAFA;
   --shadow-soft: 0 22px 45px rgba(0, 0, 0, 0.85);
   --radius-lg: 18px;
   --radius-xl: 24px;
@@ -35,7 +35,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Reusable container */
 .container {
   width: 100%;
   max-width: var(--max-width);
@@ -231,7 +230,6 @@ p {
   }
 }
 
-/* Desktop nav visibility */
 @media (min-width: 768px) {
   .site-nav {
     display: block;
