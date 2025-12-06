@@ -592,8 +592,14 @@ p {
   color: var(--color-text-muted);
 }
 
-.project-link {
+.project-links {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
   margin-top: 0.2rem;
+}
+
+.project-link {
   align-self: flex-start;
   font-size: 0.85rem;
   text-decoration: none;
