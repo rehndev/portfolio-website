@@ -3,14 +3,16 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Name | Developer</title>
+  <title>Isak Rehn | Software Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
-    content="Personal portfolio of Name, a Java Developer showcasing projects, skills, and contact information." />
+    content="Personal portfolio of Isak Rehn, a Java Developer showcasing projects, skills, and contact information." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
@@ -18,11 +20,13 @@
 
 <body>
 
+  <div class="scanline" aria-hidden="true"></div>
+
   <header class="site-header">
     <div class="container header-inner">
       <a href="#home" class="logo" aria-label="Go to top">
-        <span class="logo-mark">N</span>
-        <span class="logo-text">Name&nbsp;Name</span>
+        <span class="logo-mark">&gt;_</span>
+        <span class="logo-text">isak<span class="logo-accent">.rehn</span></span>
       </a>
 
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"
@@ -33,11 +37,11 @@
 
       <nav class="site-nav" aria-label="Primary navigation">
         <ul id="primary-navigation" class="nav-list">
-          <li><a href="#home" class="nav-link">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#home" class="nav-link"><span class="nav-prefix">//</span> Home</a></li>
+          <li><a href="#about" class="nav-link"><span class="nav-prefix">//</span> About</a></li>
+          <li><a href="#skills" class="nav-link"><span class="nav-prefix">//</span> Skills</a></li>
+          <li><a href="#projects" class="nav-link"><span class="nav-prefix">//</span> Projects</a></li>
+          <li><a href="#contact" class="nav-link"><span class="nav-prefix">//</span> Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -47,8 +51,10 @@
     <section id="home" class="section hero">
       <div class="container hero-inner">
         <div class="hero-text">
-          <p class="hero-eyebrow">Hello, I am</p>
-          <h1 class="hero-title">Name Name</h1>
+          <p class="hero-eyebrow">
+            <span class="typing-cursor"></span>Hello, I am
+          </p>
+          <h1 class="hero-title">Isak Rehn</h1>
           <p class="hero-subtitle">Software Developer</p>
           <p class="hero-description">
             Designing systems. Writing code. Learning fast.
@@ -61,15 +67,28 @@
           </div>
         </div>
 
-        <div class="hero-accent-card" aria-hidden="true">
-          <div class="hero-badge">Java • Spring Boot • JavaFX</div>
-          <div class="hero-stat">
-            <span class="hero-stat-number">5+</span>
-            <span class="hero-stat-label">Projects</span>
+        <div class="hero-terminal" aria-hidden="true">
+          <div class="terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-title">profile.java</span>
           </div>
-          <div class="hero-stat">
-            <span class="hero-stat-number">3+</span>
-            <span class="hero-stat-label">Years coding</span>
+          <div class="terminal-body">
+            <code>
+              <span class="code-keyword">public class</span> <span class="code-class">Developer</span> {<br />
+              <br />
+              &nbsp;&nbsp;<span class="code-keyword">String</span> name = <span class="code-string">"Isak Rehn"</span>;<br />
+              &nbsp;&nbsp;<span class="code-keyword">String</span> stack = <span class="code-string">"Java, Spring Boot"</span>;<br />
+              &nbsp;&nbsp;<span class="code-keyword">String</span> focus = <span class="code-string">"Backend &amp; AI"</span>;<br />
+              &nbsp;&nbsp;<span class="code-keyword">int</span> projects = <span class="code-number">5</span>;<br />
+              &nbsp;&nbsp;<span class="code-keyword">int</span> yearsCoding = <span class="code-number">3</span>;<br />
+              <br />
+              &nbsp;&nbsp;<span class="code-keyword">boolean</span> <span class="code-method">isAvailable</span>() {<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span> <span class="code-boolean">true</span>;<br />
+              &nbsp;&nbsp;}<br />
+              }
+            </code>
           </div>
         </div>
       </div>
@@ -78,6 +97,7 @@
     <section id="about" class="section about">
       <div class="container section-inner">
         <header class="section-header">
+          <span class="section-tag">// about</span>
           <h2 class="section-title">About Me</h2>
           <p class="section-subtitle">
             Building software with Java and AI-assisted workflows.
@@ -87,23 +107,23 @@
         <div class="about-grid">
           <div class="about-text">
             <p>
-              I'm Name, studying Design of Information Systems at Lund University, 
-              with a focus on developing scalable systems and intuitive applications using Java technologies. 
+              I'm Isak, studying Design of Information Systems at Lund University,
+              with a focus on developing scalable systems and intuitive applications using Java technologies.
               I actively apply AI-assisted development to improve productivity, problem-solving, and code quality.
             </p>
           </div>
           <div class="about-highlights">
             <div class="about-highlight">
               <span class="highlight-label">Primary stack</span>
-              <span class="highlight-value">Java • Spring Boot • JavaFX</span>
+              <span class="highlight-value">Java &bull; Spring Boot &bull; JavaFX</span>
             </div>
             <div class="about-highlight">
               <span class="highlight-label">Focus areas</span>
-              <span class="highlight-value">Backend Development • UI Design • Clean architecture</span>
+              <span class="highlight-value">Backend Development &bull; UI Design &bull; Clean Architecture</span>
             </div>
             <div class="about-highlight">
               <span class="highlight-label">Currently exploring</span>
-              <span class="highlight-value">LLM Workflows • LLM Integration • Advanced Spring Patterns</span>
+              <span class="highlight-value">LLM Workflows &bull; LLM Integration &bull; Advanced Spring Patterns</span>
             </div>
           </div>
         </div>
@@ -113,6 +133,7 @@
     <section id="skills" class="section skills">
       <div class="container section-inner">
         <header class="section-header">
+          <span class="section-tag">// skills</span>
           <h2 class="section-title">Skills</h2>
           <p class="section-subtitle">
             Core technologies and tools I work with.
@@ -121,6 +142,7 @@
 
         <div class="skills-grid">
           <article class="skill-card">
+            <div class="skill-icon">&#123; &#125;</div>
             <h3 class="skill-title">Java</h3>
             <p class="skill-description">
               Strong foundation in Java, object-oriented programming, and clean code principles.
@@ -131,24 +153,29 @@
               <li>Git</li>
             </ul>
           </article>
+
           <article class="skill-card">
+            <div class="skill-icon">AI</div>
             <h3 class="skill-title">AI-Assisted Development</h3>
             <p class="skill-description">
-              Using modern AI tools to accelerate development, improve code quality, debug efficiently, and design better system architectures.            </p>
+              Using modern AI tools to accelerate development, improve code quality, debug efficiently, and design better
+              architectures.
+            </p>
             <ul class="skill-tags">
               <li>AI Tools</li>
               <li>Prompt Engineering</li>
               <li>Code Generation</li>
               <li>Debugging</li>
               <li>Refactoring</li>
-
             </ul>
           </article>
 
           <article class="skill-card">
+            <div class="skill-icon">/api</div>
             <h3 class="skill-title">Backend & APIs</h3>
             <p class="skill-description">
-              Backend Development. Building robust backend systems and RESTful APIs using Java and Spring Boot, focusing on scalability, security, and performance.
+              Building robust backend systems and RESTful APIs using Java and Spring Boot, focusing on scalability,
+              security, and performance.
             </p>
             <ul class="skill-tags">
               <li>Spring Boot</li>
@@ -160,9 +187,11 @@
           </article>
 
           <article class="skill-card">
+            <div class="skill-icon">UI</div>
             <h3 class="skill-title">UI & Desktop Apps</h3>
             <p class="skill-description">
-              Designing Designing clean, responsive desktop interfaces with JavaFX and FXML, focusing on usability, structure, and maintainable UI layouts.
+              Designing clean, responsive desktop interfaces with JavaFX and FXML, focusing on usability, structure, and
+              maintainable UI layouts.
             </p>
             <ul class="skill-tags">
               <li>JavaFX</li>
@@ -179,20 +208,23 @@
     <section id="projects" class="section projects">
       <div class="container section-inner">
         <header class="section-header">
+          <span class="section-tag">// projects</span>
           <h2 class="section-title">Projects</h2>
           <p class="section-subtitle">
-            Selected Java projects from my GitHub.
+            Selected work from my GitHub.
           </p>
         </header>
 
         <div class="projects-grid">
           <article class="project-card">
             <div class="project-header">
-              <h3 class="project-title">NullPointer Market</h3>
-              <span class="project-chip">Java • Spring Boot</span>
+              <div class="project-number">01</div>
+              <span class="project-chip">Java &bull; Spring Boot</span>
             </div>
+            <h3 class="project-title">NullPointer Market</h3>
             <p class="project-description">
-              Fullstack E-Commerce web application built with Spring Boot (Java) backend and HTML/CSS/JavaScript frontend. Features authentication, product management, shopping cart, and order tracking.
+              Fullstack e-commerce web application built with Spring Boot backend and HTML/CSS/JS frontend. Features
+              authentication, product management, shopping cart, and order tracking.
             </p>
             <ul class="project-tech-list">
               <li>Java</li>
@@ -207,16 +239,17 @@
               </a>
               <a href="https://github.com/rehndev/fullstack-java-ecommerce" target="_blank" rel="noopener noreferrer"
                 class="project-link">
-                View on GitHub
+                Source Code
               </a>
             </div>
           </article>
 
           <article class="project-card">
             <div class="project-header">
-              <h3 class="project-title">Calculator</h3>
-              <span class="project-chip">Java • JavaFX</span>
+              <div class="project-number">02</div>
+              <span class="project-chip">Java &bull; JavaFX</span>
             </div>
+            <h3 class="project-title">Calculator</h3>
             <p class="project-description">
               A desktop calculator application built with Java and JavaFX, featuring a clean user interface styled with
               CSS and support for basic arithmetic operations.
@@ -227,20 +260,23 @@
               <li>UI Design</li>
               <li>MVC</li>
             </ul>
-            <a href="https://github.com/rehndev/java-calculator.git" target="_blank" rel="noopener noreferrer"
-              class="project-link">
-              View on GitHub
-            </a>
+            <div class="project-links">
+              <a href="https://github.com/rehndev/java-calculator.git" target="_blank" rel="noopener noreferrer"
+                class="project-link">
+                Source Code
+              </a>
+            </div>
           </article>
 
           <article class="project-card">
             <div class="project-header">
-              <h3 class="project-title">Task Manager</h3>
-              <span class="project-chip">Java • JavaFX</span>
+              <div class="project-number">03</div>
+              <span class="project-chip">Java &bull; JavaFX</span>
             </div>
+            <h3 class="project-title">Task Manager</h3>
             <p class="project-description">
-              A full-featured JavaFX desktop application for managing personal tasks. 
-              The project uses FXML for layout, follows the MVC pattern for clean architecture, supports CRUD operations, task organization, and stores all data locally through lightweight persistence.
+              A full-featured JavaFX desktop application for managing personal tasks. Uses FXML for layout, follows MVC
+              pattern, supports CRUD operations and local persistence.
             </p>
             <ul class="project-tech-list">
               <li>Java</li>
@@ -248,12 +284,13 @@
               <li>FXML</li>
               <li>MVC</li>
               <li>File Storage</li>
-
             </ul>
-            <a href="https://github.com/rehndev/java-taskmanager" target="_blank" rel="noopener noreferrer"
-              class="project-link">
-              View on GitHub
-            </a>
+            <div class="project-links">
+              <a href="https://github.com/rehndev/java-taskmanager" target="_blank" rel="noopener noreferrer"
+                class="project-link">
+                Source Code
+              </a>
+            </div>
           </article>
         </div>
       </div>
@@ -262,15 +299,15 @@
     <section id="contact" class="section contact">
       <div class="container section-inner">
         <header class="section-header">
-          <h2 class="section-title">Contact</h2>
+          <span class="section-tag">// contact</span>
+          <h2 class="section-title">Get In Touch</h2>
           <p class="section-subtitle">
-              Interested in working together or just want to connect? Reach out anytime.
+            Interested in working together or just want to connect? Reach out anytime.
           </p>
         </header>
 
         <div class="contact-grid">
           <div class="contact-details">
-
             <ul class="contact-list">
               <li>
                 <span class="contact-label">Email</span>
@@ -278,8 +315,7 @@
               </li>
               <li>
                 <span class="contact-label">GitHub</span>
-                <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer"
-                  class="contact-link">
+                <a href="https://github.com/rehndev" target="_blank" rel="noopener noreferrer" class="contact-link">
                   github.com/rehndev
                 </a>
               </li>
@@ -292,6 +328,11 @@
               </li>
             </ul>
           </div>
+          <div class="contact-terminal" aria-hidden="true">
+            <div class="terminal-mini">
+              <span class="terminal-prompt">$</span> echo "Let's build something together"
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -299,8 +340,8 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p class="footer-text">© <span id="year"></span> Name Name. All rights reserved.</p>
-      <a href="#home" class="back-to-top">Back to top ↑</a>
+      <p class="footer-text">&copy; <span id="year"></span> Isak Rehn</p>
+      <a href="#home" class="back-to-top">cd ~/ &uarr;</a>
     </div>
   </footer>
 </body>

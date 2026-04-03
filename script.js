@@ -65,4 +65,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
+
+  // Scroll reveal animations
+  const revealElements = document.querySelectorAll(
+    ".section-header, .skill-card, .project-card, .about-text, .about-highlight, .contact-details, .contact-terminal, .hero-terminal"
+  );
+
+  revealElements.forEach((el) => el.classList.add("reveal"));
+
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    },
+    { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
+  );
+
+  revealElements.forEach((el) => revealObserver.observe(el));
 });
