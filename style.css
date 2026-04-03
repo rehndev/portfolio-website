@@ -9,7 +9,6 @@
   --color-text: #e2e8f0;
   --color-text-muted: #94a3b8;
   --color-heading: #f1f5f9;
-  --color-green: #4ade80;
   --font-mono: "JetBrains Mono", "Fira Code", monospace;
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;
   --radius-md: 12px;
@@ -305,38 +304,6 @@ p {
 }
 
 .hero-text { max-width: 36rem; }
-
-/* Terminal line */
-.terminal-line {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-family: var(--font-mono);
-  font-size: 0.9rem;
-  color: var(--color-green);
-  margin-bottom: 1.25rem;
-  padding: 0.5rem 1rem;
-  background: rgba(13, 13, 18, 0.8);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-}
-
-.terminal-prompt {
-  color: var(--color-accent);
-  font-weight: 700;
-}
-
-.typing-text {
-  min-width: 0;
-}
-
-.terminal-cursor {
-  animation: blink 1s step-end infinite;
-}
-
-@keyframes blink {
-  50% { opacity: 0; }
-}
 
 .hero-title {
   font-size: 3rem;
