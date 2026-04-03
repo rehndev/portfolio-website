@@ -63,21 +63,6 @@ document.addEventListener("DOMContentLoaded", () => {
   );
   reveals.forEach((el) => revealObserver.observe(el));
 
-  // ---- Typing effect ----
-  const typingEl = document.querySelector(".typing-text");
-  if (typingEl) {
-    const text = typingEl.dataset.text || "";
-    let i = 0;
-    const type = () => {
-      if (i <= text.length) {
-        typingEl.textContent = text.slice(0, i);
-        i++;
-        setTimeout(type, 100 + Math.random() * 60);
-      }
-    };
-    setTimeout(type, 600);
-  }
-
   // ---- Counter animation ----
   const counters = document.querySelectorAll("[data-count]");
   const counterObserver = new IntersectionObserver(
