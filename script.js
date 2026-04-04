@@ -63,29 +63,6 @@ document.addEventListener("DOMContentLoaded", () => {
   );
   reveals.forEach((el) => revealObserver.observe(el));
 
-  // ---- Counter animation ----
-  const counters = document.querySelectorAll("[data-count]");
-  const counterObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const el = entry.target;
-          const target = parseInt(el.dataset.count, 10);
-          let current = 0;
-          const step = () => {
-            current++;
-            el.textContent = current;
-            if (current < target) requestAnimationFrame(step);
-          };
-          requestAnimationFrame(step);
-          counterObserver.unobserve(el);
-        }
-      });
-    },
-    { threshold: 0.5 }
-  );
-  counters.forEach((el) => counterObserver.observe(el));
-
   // ---- Cursor glow ----
   const cursorGlow = document.querySelector(".cursor-glow");
   if (cursorGlow && window.matchMedia("(pointer: fine)").matches) {
@@ -150,13 +127,11 @@ document.addEventListener("DOMContentLoaded", () => {
       if (p.x < 0 || p.x > width) p.vx *= -1;
       if (p.y < 0 || p.y > height) p.vy *= -1;
 
-      // Draw particle
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
       ctx.fillStyle = "rgba(129, 140, 248, 0.4)";
       ctx.fill();
 
-      // Connections between particles
       for (let j = i + 1; j < particles.length; j++) {
         const q = particles[j];
         const dx = p.x - q.x;
@@ -172,7 +147,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
 
-      // Mouse interaction - brighten nearby particles
       const mdx = p.x - mouse.x;
       const mdy = p.y - (mouse.y + window.scrollY);
       const mDist = Math.sqrt(mdx * mdx + mdy * mdy);
